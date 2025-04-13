@@ -1,38 +1,43 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors</title>
-
-  
   <link rel="stylesheet" href="styles/rock-paper-scissors.css">
 </head>
 
 <body>
-
   <p class="title">Rock Paper Scissors</p>
 
+  <div class="buttons-container">
+    <button class="move-button js-rock-button">
+      <img src="images/rock-emoji.png" class="move-emoji">
+    </button>
 
-  <button class="move-button js-rock-button">
-  <img src="images/rock-emoji.png" class="move-emoji"></button>
+    <button class="move-button js-paper-button">
+      <img src="images/paper-emoji.png" class="move-emoji">
+    </button>
 
-  <button class="move-button js-paper-button">
-  <img src="images/paper-emoji.png"
-  class="move-emoji">
-</button>
-
-  <button class="move-button js-scissors-button">
-  <img src="images/scissors-emoji.png"
-  class="move-emoji"></button>
+    <button class="move-button js-scissors-button">
+      <img src="images/scissors-emoji.png" class="move-emoji">
+    </button>
+  </div>
 
   <p class="js-result result"></p>
-  <p class="js-moves"></p>
-  <p class="js-score score "></p>
 
-  <button  class="reset-score-button  js-reset-score-button">Reset Score</button>
+  <!-- ✅ Centered moves display -->
+  <div class="moves-container">
+    <p class="js-moves"></p>
+  </div>
 
+  <p class="js-score score"></p>
 
-
-   <button class="auto-play-button js-autoplay-button" >Auto play</button>
+  <div style="text-align: center;">
+    <button class="reset-score-button js-reset-score-button">Reset Score</button>
+    <button class="auto-play-button js-autoplay-button">Auto play</button>
+  </div>
 
   <script src="scripts/rock-paper-scissors.js"></script>
 </body>
+</html>

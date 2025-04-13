@@ -1,38 +1,76 @@
-body{
+body {
   font-family: Arial;
   background-color: rgb(25, 25, 25);
   color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-.title{
+
+.title {
   font-size: 30px;
   font-weight: bold;
+  margin-top: 20px;
 }
-.move-emoji{
+
+.move-emoji {
   height: 50px;
 }
-.move-button{
+
+.move-button {
   background-color: transparent;
   border: 3px solid white;
   height: 120px;
   border-radius: 60px;
   width: 120px;
-  margin-right: 10px;
   cursor: pointer;
 }
-.result{
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.result {
   font-size: 25px;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 30px;
 }
-.score{
-  margin-top: 60px;
+
+.moves-container {
+  text-align: center;
+  margin-top: 15px;
 }
+
+.js-moves {
+  font-size: 18px;
+}
+
+.score {
+  margin-top: 30px;
+}
+
 .reset-score-button,
-.auto-play-button{
+.auto-play-button {
   background-color: white;
   padding: 8px 15px;
   font-size: 15px;
   border: none;
   cursor: pointer;
-  margin-top: 20px;
+  margin: 10px 5px;
+}
+
+/* ✅ Responsive layout for smaller screens */
+@media (max-width: 600px) {
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .move-button {
+    margin-right: 0;
+  }
 }
